@@ -14,8 +14,9 @@
 
 <html lang="en-us"><head>
     <meta charset="utf-8" />
-    <title>Docs | My New Hugo Site</title>
+    <title>Quickstart | My New Hugo Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A quickstart guide to creating new content in Lotus Docs">
     <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
     <meta name="author" content="Colin Wilson - Lotus Labs" />
     <meta name="email" content="support@aigis.uk" />
@@ -28,13 +29,15 @@
 <link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
 <link rel="manifest" crossorigin="use-credentials" href="http://example.org/site.webmanifest">
-<meta property="og:title" content="Docs" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://example.org/docs/" /><meta property="og:image" content="http://example.org/opengraph/card-base-2_hu_e4e5bd55e8294a77.png"/><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://example.org/opengraph/card-base-2_hu_e4e5bd55e8294a77.png"/>
-<meta name="twitter:title" content="Docs"/>
-<meta name="twitter:description" content=""/>
+<meta property="og:title" content="Quickstart" />
+<meta property="og:description" content="A quickstart guide to creating new content in Lotus Docs" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/docs/quickstart/" /><meta property="og:image" content="http://example.org/opengraph/card-base-2_hu_61f1188ca5f07d9b.png"/><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2023-05-03T22:37:22+01:00" />
+<meta property="article:modified_time" content="2023-05-03T22:37:22+01:00" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/opengraph/card-base-2_hu_61f1188ca5f07d9b.png"/>
+<meta name="twitter:title" content="Quickstart"/>
+<meta name="twitter:description" content="A quickstart guide to creating new content in Lotus Docs"/>
 
     
         <link rel="alternate" type="application/atom+xml" title="Atom feed for My New Hugo Site" href="/index.xml" />
@@ -72,7 +75,7 @@
                 
                     
                         
-                        <li class="">
+                        <li class="current">
                             <a class="sidebar-root-link" href="http://example.org/docs/quickstart/">
                                 
                                 Quickstart
@@ -263,10 +266,18 @@
                                         <div class="d-md-flex justify-content-between align-items-center"><nav aria-label="breadcrumb" class="d-inline-block pb-2 mt-1 mt-sm-0">
     <ul id="breadcrumbs" class="breadcrumb bg-transparent mb-0" itemscope itemtype="https://schema.org/BreadcrumbList">
         
+            
+                <li class="breadcrumb-item text-capitalize active" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/docs/">
+                        <i class="material-icons size-20 align-text-bottom" itemprop="name">Home</i>
+                    </a>
+                    <meta itemprop="position" content='1' />
+                </li>
+            
         
-            <li class="breadcrumb-item text-capitalize active" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <i class="material-icons size-20 align-text-bottom" itemprop="name">Home</i>
-                <meta itemprop="position" content='1' />
+            <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span itemprop="name">Quickstart</span>
+                <meta itemprop="position" content='2' />
             </li>
         
     </ul>
@@ -274,86 +285,576 @@
                                     
                                     <div class="row flex-xl-nowrap">
                                         
-                                        <div class="docs-toc col-xl-3 visually-hidden visually-hidden  d-xl-block"><toc>
+                                        <div class="docs-toc col-xl-3    d-xl-block"><toc>
     <div class="fw-bold text-uppercase mb-2">On this page</div>
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#install-hugo">Install Hugo</a>
+      <ul>
+        <li><a href="#manual-installation">Manual Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#create-a-new-lotus-docs-site">Create a New Lotus Docs Site</a></li>
+    <li><a href="#create-new-content">Create New Content</a></li>
+    <li><a href="#preview-your-site">Preview your Site</a></li>
+    <li><a href="#ordering-content">Ordering Content</a></li>
+    <li><a href="#auto-generated-menu">Auto-Generated Menu</a></li>
+    <li><a href="#second-level-menu-items">Second Level Menu Items</a></li>
+  </ul>
+</nav>
     </toc></div>
                                         
                                         
-                                        <div class="docs-toc-mobile visually-hidden visually-hidden  d-print-none d-xl-none">
+                                        <div class="docs-toc-mobile    d-print-none d-xl-none">
                                             <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
                                                 Table of Contents
                                             </button>
-<nav id="toc-mobile"></nav></div>
-                                        <div class="docs-content col-12  mt-0">
+<nav id="toc-mobile">
+  <ul class="dropdown-menu">
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#install-hugo">Install Hugo</a>
+      <ul>
+        <li><a href="#manual-installation">Manual Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#create-a-new-lotus-docs-site">Create a New Lotus Docs Site</a></li>
+    <li><a href="#create-new-content">Create New Content</a></li>
+    <li><a href="#preview-your-site">Preview your Site</a></li>
+    <li><a href="#ordering-content">Ordering Content</a></li>
+    <li><a href="#auto-generated-menu">Auto-Generated Menu</a></li>
+    <li><a href="#second-level-menu-items">Second Level Menu Items</a></li>
+  </ul>
+</nav></div>
+                                        <div class="docs-content col-12 col-xl-9 mt-0">
                                             <div class="mb-0 d-flex">
                                                 
                                                 <h1 class="content-title mb-0">
-                                                    Docs
+                                                    Quickstart
                                                     
                                                 </h1>
                                             </div>
                                             
                                             <div id="content" class="main-content" >
                                                 
-    <div class="row flex-xl-wrap">
-        
-        <div id="list-item" class="col-md-4 col-12 mt-4 pt-2">
-            <a class="text-decoration-none text-reset" href="http://example.org/docs/quickstart/">
-                <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
-                    <span class="icon-color d-flex my-3">
-                        <i class="material-icons align-middle">rocket_launch</i>
-                        
-                        
-                    </span>
-                    <div class="card-body p-0 content">
-                        <p class="fs-5 fw-semibold card-title mb-1">Quickstart</p>
-                        <p class="para card-text mb-0">A quickstart guide to creating new content in Lotus Docs</p>
-                    </div>
-                    
-                </div>
-            </a>
-        </div>
-        
-        <div id="list-item" class="col-md-4 col-12 mt-4 pt-2">
-            <a class="text-decoration-none text-reset" href="http://example.org/docs/example-content/">
-                <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
-                    <span class="icon-color d-flex my-3">
-                        <i class="material-icons align-middle">edit</i>
-                        
-                        <i class="material-icons icon-faint align-middle ms-auto" title="Directory">folder</i>
-                    </span>
-                    <div class="card-body p-0 content">
-                        <p class="fs-5 fw-semibold card-title mb-1">Example Content</p>
-                        <p class="para card-text mb-0">Example content</p>
-                    </div>
-                    
-                </div>
-            </a>
-        </div>
-        
-        <div id="list-item" class="col-md-4 col-12 mt-4 pt-2">
-            <a class="text-decoration-none text-reset" href="http://example.org/docs/section-folder/">
-                <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
-                    <span class="icon-color d-flex my-3">
-                        <i class="material-icons align-middle">folder</i>
-                        
-                        <i class="material-icons icon-faint align-middle ms-auto" title="Directory">folder</i>
-                    </span>
-                    <div class="card-body p-0 content">
-                        <p class="fs-5 fw-semibold card-title mb-1">Section Folder</p>
-                        <p class="para card-text mb-0">Example of a folder at the root of the content tree (under <code>/docs</code>)</p>
-                    </div>
-                    
-                </div>
-            </a>
-        </div>
-        
+    
+    <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
+        <h2 id="requirements">Requirements <a href="#requirements" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><ul>
+<li><strong>git</strong></li>
+<li><strong>Go ≥ v1.19</strong></li>
+<li><strong>Hugo ≥ v0.100.0</strong> (Extended Version)</li>
+</ul>
+<h2 id="install-hugo">Install Hugo <a href="#install-hugo" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Install the <a href="https://github.com/gohugoio/hugo/releases/latest" rel="external" target="_blank">Hugo CLI<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a>, using the specific instructions for your operating system below:</p>
+
+<nav>
+	<div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+		
+		
+		
+		
+
+		
+
+		<a class="nav-link  active"
+		   id="badfceTab" data-bs-toggle="tab" data-bs-target="#badfce"
+		   type="button" role="tab" aria-controls="badfce" aria-selected="true">Linux</a>
+
+		
+
+		<a class="nav-link "
+		   id="deabcfTab" data-bs-toggle="tab" data-bs-target="#deabcf"
+		   type="button" role="tab" aria-controls="deabcf" aria-selected="true">Homebrew (macOS)</a>
+
+		
+
+		<a class="nav-link "
+		   id="eafdbcTab" data-bs-toggle="tab" data-bs-target="#eafdbc"
+		   type="button" role="tab" aria-controls="eafdbc" aria-selected="true">Windows (Chocolatey)</a>
+
+		
+
+		<a class="nav-link "
+		   id="dbecfaTab" data-bs-toggle="tab" data-bs-target="#dbecfa"
+		   type="button" role="tab" aria-controls="dbecfa" aria-selected="true">Windows (Scoop)</a>
+
+		
+
+	</div>
+</nav>
+
+<div class="tab-content" id="nav-tab-content">
+
+	
+
+
+
+
+
+
+<div class="tab-pane fade show active" id="badfce" role="tabpanel" aria-labelledby="nav-1">
+
+	<p>Your Linux distro’s package manager may include Hugo. If this is the case, install it directly using your distro’s package manager – for instance, in Ubuntu, run the following command. This will install the extended edition of Hugo:</p>
+
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt install hugo</span></span></code></pre></div>
+
+
+</div>
+
+
+
+
+
+
+<div class="tab-pane fade" id="deabcf" role="tabpanel" aria-labelledby="nav-1">
+
+	<p>If you use the package manager <a href="https://brew.sh/" rel="external" target="_blank">Homebrew<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a>, run the <code>brew install</code> command in your terminal to install Hugo:</p>
+
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>brew install hugo</span></span></code></pre></div>
+
+
+</div>
+
+
+
+
+
+
+<div class="tab-pane fade" id="eafdbc" role="tabpanel" aria-labelledby="nav-1">
+
+	<p>If you use the package manager <a href="https://chocolatey.org/" rel="external" target="_blank">Chocolatey<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a>, run the <code>choco install</code> command in your terminal to install Hugo:</p>
+
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>choco install hugo --confirm</span></span></code></pre></div>
+
+
+</div>
+
+
+
+
+
+
+<div class="tab-pane fade" id="dbecfa" role="tabpanel" aria-labelledby="nav-1">
+
+	<p>If you use the package manager <a href="https://scoop.sh/" rel="external" target="_blank">Scoop<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a>, run the <code>scoop install</code> command in your terminal to install Hugo:</p>
+
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>scoop install hugo</span></span></code></pre></div>
+
+
+</div>
+
+
+</div>
+<h3 id="manual-installation">Manual Installation <a href="#manual-installation" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>The Hugo GitHub repository contains pre-built versions of the Hugo command-line tool for various operating systems, which can be found on the <a href="https://github.com/gohugoio/hugo/releases/latest" rel="external" target="_blank">Releases page<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a></p>
+<p>For more instruction on installing these releases, refer to <a href="https://gohugo.io/getting-started/installing/" rel="external" target="_blank">Hugo’s documentation<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a></p>
+<h2 id="create-a-new-lotus-docs-site">Create a New Lotus Docs Site <a href="#create-a-new-lotus-docs-site" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>With Hugo installed, create a new Hugo project using the <code>hugo new</code> command:</p>
+
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site my-docs-site <span style="color:#f92672">&amp;&amp;</span> cd my-docs-site</span></span></code></pre></div>
+<p>Now initialize your project as a Hugo Module using the <code>hugo mod init</code> command:</p>
+
+
+    
+    <pre tabindex="0"><code>hugo mod init my-docs-site</code></pre>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>You can now choose your preferred method for adding the Lotus Docs theme to your new site from the options below:</p>
+
+<nav>
+	<div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+		
+		
+		
+		
+
+		
+
+		<a class="nav-link  active"
+		   id="dcfebaTab" data-bs-toggle="tab" data-bs-target="#dcfeba"
+		   type="button" role="tab" aria-controls="dcfeba" aria-selected="true">Add as a Hugo Module</a>
+
+		
+
+		<a class="nav-link "
+		   id="abcedfTab" data-bs-toggle="tab" data-bs-target="#abcedf"
+		   type="button" role="tab" aria-controls="abcedf" aria-selected="true">Add as a Git submodule</a>
+
+		
+
+		<a class="nav-link "
+		   id="ebfcdaTab" data-bs-toggle="tab" data-bs-target="#ebfcda"
+		   type="button" role="tab" aria-controls="ebfcda" aria-selected="true">Clone theme files</a>
+
+		
+
+	</div>
+</nav>
+
+<div class="tab-content" id="nav-tab-content">
+
+	
+
+
+
+
+
+
+<div class="tab-pane fade show active" id="dcfeba" role="tabpanel" aria-labelledby="nav-1">
+
+	<p>Edit the <code>hugo.toml</code> configuration file to include the <a href="https://github.com/colinwilson/lotusdocs" rel="external" target="_blank">Lotus Docs theme<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a> and the <a href="https://github.com/gohugoio/hugo-mod-bootstrap-scss" rel="external" target="_blank">Hugo Bootstrap module<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a> (lines <code>5 to 11</code> below):</p>
+
+
+    
+    <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;http://example.org/&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;en-us&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;My New Hugo Site&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>[<span style="color:#a6e22e">module</span>]
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    [[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">imports</span>]]
+</span></span><span style="display:flex; background-color:#3c3d38"><span>        <span style="color:#a6e22e">path</span> = <span style="color:#e6db74">&#34;github.com/colinwilson/lotusdocs&#34;</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>        <span style="color:#a6e22e">disable</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    [[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">imports</span>]]
+</span></span><span style="display:flex; background-color:#3c3d38"><span>        <span style="color:#a6e22e">path</span> = <span style="color:#e6db74">&#34;github.com/gohugoio/hugo-mod-bootstrap-scss/v5&#34;</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>        <span style="color:#a6e22e">disable</span> = <span style="color:#66d9ef">false</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+
+</div>
+
+
+
+
+
+
+<div class="tab-pane fade" id="abcedf" role="tabpanel" aria-labelledby="nav-1">
+
+	<p>Initialize Git and clone the Lotus Docs theme repository as a submodule:</p>
+
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/colinwilson/lotusdocs themes/lotusdocs</span></span></code></pre></div>
+<p>Update your existing <code>hugo.toml</code> config file with the configuration below:</p>
+
+
+    
+    <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;http://example.org/&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;en-us&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;My New Hugo Site&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>[<span style="color:#a6e22e">module</span>]
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    [[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">imports</span>]]
+</span></span><span style="display:flex; background-color:#3c3d38"><span>        <span style="color:#a6e22e">path</span> = <span style="color:#e6db74">&#34;lotusdocs&#34;</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>        <span style="color:#a6e22e">disable</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    [[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">imports</span>]]
+</span></span><span style="display:flex; background-color:#3c3d38"><span>        <span style="color:#a6e22e">path</span> = <span style="color:#e6db74">&#34;github.com/gohugoio/hugo-mod-bootstrap-scss/v5&#34;</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>        <span style="color:#a6e22e">disable</span> = <span style="color:#66d9ef">false</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+
+</div>
+
+
+
+
+
+
+<div class="tab-pane fade" id="ebfcda" role="tabpanel" aria-labelledby="nav-1">
+
+	<p>In cases where you prefer to customise and maintain the Lotus Docs theme yourself, you can clone the theme into your project’s <code>themes</code> subdirectory.</p>
+<p>Run the following command from your project’s root directory to clone the Lotus Docs theme into your <code>themes</code> subdirectory:</p>
+
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/colinwilson/lotusdocs themes/lotusdocs</span></span></code></pre></div>
+<p>Edit the <code>hugo.toml</code> configuration file to include the Lotus Docs theme and the Hugo Bootstrap module (lines <code>5 to 11</code> below):</p>
+
+
+    
+    <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;http://example.org/&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;en-us&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;My New Hugo Site&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>[<span style="color:#a6e22e">module</span>]
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    [[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">imports</span>]]
+</span></span><span style="display:flex; background-color:#3c3d38"><span>        <span style="color:#a6e22e">path</span> = <span style="color:#e6db74">&#34;lotusdocs&#34;</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>        <span style="color:#a6e22e">disable</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    [[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">imports</span>]]
+</span></span><span style="display:flex; background-color:#3c3d38"><span>        <span style="color:#a6e22e">path</span> = <span style="color:#e6db74">&#34;github.com/gohugoio/hugo-mod-bootstrap-scss/v5&#34;</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>        <span style="color:#a6e22e">disable</span> = <span style="color:#66d9ef">false</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+
+</div>
+
+
+</div>
+<h2 id="create-new-content">Create New Content <a href="#create-new-content" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Navigate to the root of your Hugo project and use the <code>hugo new</code> command to create a file in the <code>content/docs</code> directory:</p>
+
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new docs/example-page.md</span></span></code></pre></div>
+<p>This will create a markdown file named <code>example-page.md</code> with the following default front matter:</p>
+
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">+++</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Example Page&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">icon</span> = <span style="color:#e6db74">&#34;article&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">date</span> = <span style="color:#e6db74">&#34;2023-05-22T00:27:57+01:00&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">lastmod</span> = <span style="color:#e6db74">&#34;2023-05-22T00:27:57+01:00&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">draft</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">toc</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">999</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">+++</span></span></span></code></pre></div>
+<p>Modify the options to suit your needs.</p>
+<p>The code below shows the front matter code used to create this page, along with a portion of markdown from the body:</p>
+
+
+
+
+
+
+  
+      <div class="prism-shortcode">
+      <pre id="c203b85" class="language-md"
+        ><code class="language-md"
+        >&#43;&#43;&#43;
+weight = 100
+date = &#34;2023-05-03T22:37:22&#43;01:00&#34;
+draft = true
+author = &#34;Colin Wilson&#34;
+title = &#34;Quickstart&#34;
+icon = &#34;rocket_launch&#34;
+toc = true
+description = &#34;A quickstart guide to creating new content in Lotus Docs&#34;
+publishdate = &#34;2023-05-03T22:37:22&#43;01:00&#34;
+tags = [&#34;Beginners&#34;]
+&#43;&#43;&#43;
+
+## Create New Content
+
+Navigate to the root of your Hugo project and use the `hugo new` command to create a file in the `content/docs` directory:
+
+```shell
+hugo new docs/examplepage.md
+```
+...
+</code></pre>
+      </div>
+  
+
+<h2 id="preview-your-site">Preview your Site <a href="#preview-your-site" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Now that you&rsquo;ve created some sample content you can preview your new Lotus Docs site using the <code>huge server</code> command:</p>
+
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo server -D</span></span></code></pre></div>
+<p>Navigate to <code>localhost:1313/docs</code> and you should see a card link to the <strong>Example Page</strong> created earlier:</p>
+<p>
+
+
+
+
+
+  
+
+
+
+  
+    
+      <img src="/lotus_docs_new_site_and_content_module_setup_oiuyex_17739219795216900687.png" alt="New Lotus Docs Site - Example Content" width="1509" height="779" loading="lazy">
+    
+  
+</p>
+<h2 id="ordering-content">Ordering Content <a href="#ordering-content" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Lotus Docs uses a simple weighting method for ordering content and creating menus.</p>
+<p>The front matter <code>weight</code> variable is used to order all content and auto-generate the menu structure (including the sidebar menu and page navigation buttons). Lower weight values take higher precedence. So content with lower weights come first and are so ordered in the menu.</p>
+<h2 id="auto-generated-menu">Auto-Generated Menu <a href="#auto-generated-menu" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>As mentioned, Lotus Docs auto-generates menus and navigation links using the <a href="https://gohugo.io/content-management/front-matter/#predefined" rel="external" target="_blank">front matter<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a> weight variable. For example, Navigate to the <code>content/docs</code> directory and create two content files, <code>doc-one.md</code> and <code>doc-two.md</code>, then edit the weight values to <code>100</code> and <code>200</code> respectively:</p>
+
+<div class="alert alert-default d-flex" role="alert">
+  <div class="flex-shrink-1 alert-icon">
+  
+  <span class="material-icons size-20 me-2">
+  notifications
+  </span></div>
+  
+  <div class="w-100">It&rsquo;s good practice to increment the weight of your posts by a factor of <!-- raw HTML omitted -->100<!-- raw HTML omitted -->. This ensures plenty of room to insert new posts between existing items should you need to.</div>
+  </div>
+<p>Your directory structure should now look like this:</p>
+
+
+    
+    <pre tabindex="0"><code class="language-treeview" data-lang="treeview">content/
+└── docs/
+    ├── doc-one.md
+    └── doc-two.md</code></pre>
+<p>Links to both posts are now visible in the sidebar menu where <code>doc-one.md</code> will come before and be placed above <code>doc-two.md</code>:</p>
+<p>
+
+
+
+
+
+  
+
+
+
+  
+    
+      <img src="/sidebar_menu_example_01-modified_qkb2si_1722933931114905720.png" alt="sidebar menu items example" width="299" height="137" loading="lazy">
+    
+  
+</p>
+
+<div class="alert alert-info d-flex" role="alert">
+  <div class="flex-shrink-1 alert-icon">
+  
+  <span class="material-icons size-20 me-2">
+  info
+  </span></div>
+  
+  <div class="w-100">The option to manually configure a predefined menu structure in <!-- raw HTML omitted -->hugo.toml<!-- raw HTML omitted --> as opposed to an auto-generated one is part of the Lotus Docs roadmap.</div>
+  </div>
+<h2 id="second-level-menu-items">Second Level Menu Items <a href="#second-level-menu-items" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Second level menu items can be generated by first creating a <strong>&lsquo;parent&rsquo;</strong> directory containing an <code>_index.md</code> file, e.g.:</p>
+
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new docs/parent-directory/_index.md</span></span></code></pre></div>
+<p>The above command creates an <code>_index.md</code> file inside a directory named <code>parent-directory</code> under <code>content/docs</code>:</p>
+
+
+    
+    <pre tabindex="0"><code class="language-treeview" data-lang="treeview">content/
+└── docs/
+    ├── parent-directory/
+    │   └── _index.md
+    ├── doc-one.md
+    ├── doc-two.md
+    └── _index.md</code></pre>
+<p>You can now create second level items inside the <code>parent-directory</code> as normal. Run the <code>hugo new</code> command again to create a post inside the newly created <code>parent-directory</code>:</p>
+
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new docs/parent-directory/doc-three.md</span></span></code></pre></div>
+<p>Your directory/file structure should now look like this:</p>
+
+
+    
+    <pre tabindex="0"><code class="language-treeview" data-lang="treeview">content/
+└── docs/
+    ├── parent-directory/
+    │   ├── _index.md
+    │   └── doc-three.md
+    ├── doc-one.md
+    ├── doc-two.md
+    └── _index.md</code></pre>
+<p>This is reflected in the sidebar menu with <code>parent-directory</code> functioning as a dropdown menu containing a link to the <strong>Doc Three</strong> post:</p>
+<p>
+
+
+
+
+
+  
+
+
+
+  
+    
+      <img src="/sidebar_menu_example_02_jsecye_14828271922252313481.png" alt="sidebar parent menu example" width="299" height="110" loading="lazy">
+    
+  
+</p>
+
     </div>
 
+    
+
+    
                                             </div>
                                             <div><hr class="doc-hr">
 <div id="doc-nav" class="d-print-none">
+
+	<div class="row flex-xl-nowrap ">
+	<div class="col-sm-6 pt-2 doc-prev">
+		<a class="ms-auto" href="/docs/example-content/code/">
+			<div class="card h-100 my-1 text-end">
+				<div class="card-body py-2">
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0">Code <i class="material-icons align-middle">navigate_next</i></p>
+					
+				</div>
+			</div>
+		</a>
+        </div>
+	</div>
 </div></div>
                                         </div>
                                     </div>

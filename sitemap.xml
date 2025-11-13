@@ -2,20 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/posts/my-first-post/</loc>
-    <lastmod>2023-05-22T00:27:57+01:00</lastmod>
+    <loc>http://example.org/fr/docs/quickstart/</loc>
+    <lastmod>2023-05-03T22:37:22+01:00</lastmod>
+  </url><url>
+    <loc>http://example.org/docs/quickstart/</loc>
+    <lastmod>2023-05-03T22:37:22+01:00</lastmod>
+  </url><url>
+    <loc>http://example.org/de/docs/quickstart/</loc>
+    <lastmod>2023-05-03T22:37:22+01:00</lastmod>
+  </url><url>
+    <loc>http://example.org/de/docs/example-content/</loc>
+    <lastmod>2023-06-08T06:34:57+01:00</lastmod>
+  </url><url>
+    <loc>http://example.org/docs/example-content/</loc>
+    <lastmod>2023-05-22T00:34:57+01:00</lastmod>
+  </url><url>
+    <loc>http://example.org/fr/docs/example-content/</loc>
+    <lastmod>2023-05-22T00:34:57+01:00</lastmod>
+  </url><url>
+    <loc>http://example.org/docs/example-content/code/</loc>
+    <lastmod>2023-05-22T00:44:31+01:00</lastmod>
+  </url><url>
+    <loc>http://example.org/fr/docs/example-content/code/</loc>
+    <lastmod>2023-05-22T00:44:31+01:00</lastmod>
+  </url><url>
+    <loc>http://example.org/docs/example-content/mermaid/</loc>
+    <lastmod>2023-09-08T05:12:51+01:00</lastmod>
+  </url><url>
+    <loc>http://example.org/docs/section-folder/</loc>
+    <lastmod>2023-05-22T00:34:57+01:00</lastmod>
+  </url><url>
+    <loc>http://example.org/docs/section-folder/section-subfolder/</loc>
+    <lastmod>2023-05-22T00:34:57+01:00</lastmod>
+  </url><url>
+    <loc>http://example.org/docs/section-folder/section-subfolder/second-section-subfolder/third-section-subfolder/</loc>
+    <lastmod>2023-05-22T00:34:57+01:00</lastmod>
+  </url><url>
+    <loc>http://example.org/docs/section-folder/section-subfolder/second-section-subfolder/</loc>
+    <lastmod>2023-05-22T00:34:57+01:00</lastmod>
+  </url><url>
+    <loc>http://example.org/docs/section-folder/section-subfolder/second-section-subfolder/third-section-subfolder/example-doc/</loc>
+    <lastmod>2023-05-03T22:37:22+01:00</lastmod>
   </url><url>
     <loc>http://example.org/docs/</loc>
-    <lastmod>2025-11-13T01:03:31-05:00</lastmod>
+    <lastmod>2023-09-08T05:12:51+01:00</lastmod>
   </url><url>
     <loc>http://example.org/</loc>
-    <lastmod>2025-11-13T01:03:31-05:00</lastmod>
+    <lastmod>2023-09-08T05:12:51+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/</loc>
-    <lastmod>2023-05-22T00:27:57+01:00</lastmod>
+    <loc>http://example.org/de/</loc>
+    <lastmod>2023-06-08T06:34:57+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://example.org/fr/</loc>
+    <lastmod>2023-05-22T00:44:31+01:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/beginners/</loc>
+    <lastmod>2023-05-03T22:37:22+01:00</lastmod>
   </url><url>
     <loc>http://example.org/tags/</loc>
+    <lastmod>2023-05-03T22:37:22+01:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/</loc>
   </url>
 </urlset>
